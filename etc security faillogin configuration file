@@ -96,7 +96,7 @@ root@ubuntu:/etc/security# cat faillock.conf
 # admin_group = <admin_group_name>
 
 
-------------------------------------------------------------------
-
-https://manpages.ubuntu.com/manpages/jammy/en/man8/pam_faillock.8.html
+# -----------------END copy above only ---------------------------------
+# here is the proof if you want to configure it by Ubuntu manual below.
+# https://manpages.ubuntu.com/manpages/jammy/en/man8/pam_faillock.8.html
 
