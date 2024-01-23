@@ -111,9 +111,9 @@ auth     required       pam_tally.so per_user
 @include common-session
 @include common-password
 
---------------------------------------------------
-
-https://manpages.ubuntu.com/manpages/jammy/en/man8/pam_faillock.8.html
+# -----------------END copy above only ---------------------------------
+# here is the proof if you want to configure it by Ubuntu manual below.
+# https://manpages.ubuntu.com/manpages/jammy/en/man8/pam_faillock.8.html
 
 
 
