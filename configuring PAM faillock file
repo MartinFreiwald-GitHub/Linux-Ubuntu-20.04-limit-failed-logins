@@ -1,0 +1,23 @@
+Step 1: Configuring pam_faillock
+The first step is to configure pam_faillock. The configuration file is located at /etc/security/faillock.conf. Open the file in your preferred text editor. Here, we use nano:
+
+sudo nano /etc/security/faillock.conf
+
+In this file, you can set several options. Here’s an example configuration:
+
+dir = /var/run/faillock
+audit
+silent
+deny = 3
+fail_interval = 900
+unlock_time = 120
+
+Here’s what each option does:
+
+dir: This is the directory where pam_faillock will store the tally files.
+audit: This option enables audit logging.
+silent: This option makes pam_faillock not report the user’s remaining attempts.
+deny: This is the number of failed attempts that triggers pam_faillock to lock the account.
+fail_interval: This is the time period (in seconds) during which the failed attempts are counted.
+unlock_time: This is the time period (in seconds) for which the account is locked.
+
